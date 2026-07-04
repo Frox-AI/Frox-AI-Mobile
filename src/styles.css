@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --void: #120f1a;
+  --surface: #1c1826;
+  --surface2: #241f32;
+  --ink: #f3f0fa;
+  --muted: #a79fc0;
+  --hairline: #3a3450;
+  --cyan: #4ce0d2;
+  --magenta: #ff5fa2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--void);
+  color: var(--ink);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.display {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.grad-text {
+  background: linear-gradient(100deg, var(--cyan), var(--magenta));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grad-bg {
+  background: linear-gradient(100deg, var(--cyan), var(--magenta));
+  color: var(--void);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--hairline);
+  border-radius: 6px;
+}
